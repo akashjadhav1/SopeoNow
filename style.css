@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar CSS */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(249, 246, 246, 1);
+    width: 100%;
+    height: 56px;
+}
+
+.nav-main1, .nav-main2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-main1 {
+    gap: 20px;
+}
+
+.nav-main2 {
+    background: linear-gradient(90deg, #FFE0E0 1.36%, #FF6464 86.49%);
+    justify-content: flex-end;
+    width: 100%; 
+    height: 56px;
+    gap: 20px; 
+    padding-right: 20px;
+}
+
+.menu, .logo {
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+.menu {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 46px;
+    height: 26px;
+}
+
+.mng {
+    width: 245px;
+    height: 22px;
+    top: 17px; 
+    left: 160px;
+    gap: 0px;
+    opacity: 1; 
+
+    /* Typography */
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: rgba(52, 53, 113, 1);
+    border-radius: 4px; 
+ 
+}
+
+.nav-item1, .nav-item2 {
+    display: flex;
+    align-items: center;
+    gap: 3px; 
+}
+
+.nav-item1 img, .nav-item2 img {
+    width: 24px;
+    height: 24px;
+    
+}
+.arrow{
+width: 16px;
+height: 16px;
+top: 10px;
+left: 108px;
+padding: 6.33px 3.95px 4.62px 3.95px;
+}
+
+.nav-item1 p, .nav-item2 p {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin: 0;
+    color: white;
+}
+
+
+.nav-item3 .profile-circle {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF6464;
+}
+
+
+
+
+/* Side Nav CSS */
+
+.side-nav{
+    width: 100px;
+    height: 700px;
+    top: 56px;
+    gap: 0px;
+    opacity: 0px;    
+background: linear-gradient(179.66deg, #8B4367 0.09%, #343571 99.86%);
+box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.side-nav img {
+    width: 80px;
+    height: 50px;
+    top: 976px;
+    left: 10px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+
+}
+
+
+/* Key Metrics CSS*/
+
+
