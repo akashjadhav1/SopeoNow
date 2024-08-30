@@ -1,4 +1,4 @@
-{
+export const data = [{
     "dttm": "Mar 24 23 11:30",
     "graphs": {
         "AccidentEmergency": {
@@ -484,4 +484,53 @@
             "avg_visit_tm": 180
         }
     ]
-}
+}]
+
+
+
+
+export const keyMetrics = {
+    "keyMetrics": [
+      {
+        "title": "Registration Time",
+        "label": "Queue to Registration",
+        "time": "02:34"
+      },
+      {
+        "title": "Time to Triage",
+        "label": "Registration to Triage",
+        "time": "00:34"
+      },
+      {
+        "title": "Time to Consult",
+        "label": "Triage to Consult",
+        "time": "00:34"
+      },
+      {
+        "title": "In Zone Time",
+        "label": "Triage End to Discharge",
+        "time": "02:34"
+      },
+      {
+        "title": "Treatment Time",
+        "label": "Consultation to Discharge",
+        "time": "02:34"
+      },
+      {
+        "title": "Lab Processing Time",
+        "label": "Lab Order Request to Processing",
+        "time": "02:34"
+      },
+      {
+        "title": "Radiology Processing Time",
+        "label": "Radiology Order Request to Processing",
+        "time": "02:34"
+      },
+      {
+        "title": "IP Transfers",
+        "label": "UCC Discharge to IP Bed Allotment",
+        "time": "00:34"
+      }
+    ]
+  }
+  

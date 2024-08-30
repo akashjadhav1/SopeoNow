@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(249, 246, 246, 1);
-    width: 100%;
+    width: 100%; /* Reduced by 20% */
     height: 56px;
 }
 
@@ -21,16 +23,16 @@
 }
 
 .nav-main1 {
-    gap: 20px;
+    gap: 16.2px; /* Reduced by 20% */
 }
 
 .nav-main2 {
     background: linear-gradient(90deg, #FFE0E0 1.36%, #FF6464 86.49%);
     justify-content: flex-end;
-    width: 100%; 
+    width: 81%; /* Reduced by 20% */
     height: 56px;
-    gap: 20px; 
-    padding-right: 20px;
+    gap: 16.2px; /* Reduced by 20% */
+    padding-right: 16.2px; /* Reduced by 20% */
 }
 
 .menu, .logo {
@@ -40,105 +42,593 @@
 }
 
 .menu {
-    width: 24px;
-    height: 24px;
-    margin-left: 20px;
+    width: 19.4px; /* Reduced by 20% */
+    height: 19.4px; /* Reduced by 20% */
+    margin-left: 16.2px; /* Reduced by 20% */
 }
 
 .logo {
-    width: 46px;
-    height: 26px;
+    width: 33.3px; /* Reduced by 20% */
+    height: 21px; /* Reduced by 20% */
 }
 
 .mng {
-    width: 245px;
-    height: 22px;
-    top: 17px; 
-    left: 160px;
+    width: 176.4px; /* Reduced by 20% */
+    height: 17.8px; /* Reduced by 20% */
+    top: 12.2px; /* Reduced by 20% */
+    left: 115.2px; /* Reduced by 20% */
     gap: 0px;
-    opacity: 1; 
+    opacity: 1;
 
     /* Typography */
     font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.44px;
+    font-size: 16.2px; /* Reduced by 20% */
+    font-weight: 450; /* Reduced by 20% */
+    line-height: 18.9px; /* Reduced by 20% */
     text-align: left;
     color: rgba(52, 53, 113, 1);
-    border-radius: 4px; 
- 
+    border-radius: 4px;
 }
 
 .nav-item1, .nav-item2 {
     display: flex;
     align-items: center;
-    gap: 3px; 
+    gap: 2.43px; /* Reduced by 20% */
 }
 
 .nav-item1 img, .nav-item2 img {
-    width: 24px;
-    height: 24px;
-    
+    width: 19.4px; /* Reduced by 20% */
+    height: 19.4px; /* Reduced by 20% */
 }
-.arrow{
-width: 16px;
-height: 16px;
-top: 10px;
-left: 108px;
-padding: 6.33px 3.95px 4.62px 3.95px;
+
+.arrow {
+    width: 12.96px; /* Reduced by 20% */
+    height: 12.96px; /* Reduced by 20% */
+    top: 8.1px; /* Reduced by 20% */
+    left: 87.5px; /* Reduced by 20% */
+    padding: 5.1px 3.19px 3.75px 3.19px; /* Reduced by 20% */
 }
 
 .nav-item1 p, .nav-item2 p {
     font-family: Roboto, sans-serif;
-    font-size: 14px;
+    font-size: 11.8px; /* Reduced by 20% */
     text-transform: capitalize;
     margin: 0;
     color: white;
 }
 
-
 .nav-item3 .profile-circle {
-    width: 36px;
-    height: 36px;
+    width: 29.16px; /* Reduced by 20% */
+    height: 29.16px; /* Reduced by 20% */
     background-color: white;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+    font-family: Roboto;
+    font-size: 11.8px; /* Reduced by 20% */
+    font-weight: 72; /* Reduced by 20% */
     color: #FF6464;
 }
 
-
-
+.main {
+    display: flex;
+}
 
 /* Side Nav CSS */
 
-.side-nav{
-    width: 100px;
-    height: 700px;
-    top: 56px;
+.side-nav {
+    width: 72.9px; /* Reduced by 20% */
+    height: 736.6px; /* Reduced by 20% */
+    top: 40.3px; /* Reduced by 20% */
     gap: 0px;
-    opacity: 0px;    
-background: linear-gradient(179.66deg, #8B4367 0.09%, #343571 99.86%);
-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0px;
+    background: linear-gradient(179.66deg, #8B4367 0.09%, #343571 99.86%);
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .side-nav img {
-    width: 80px;
-    height: 50px;
-    top: 976px;
-    left: 10px;
+    width: 64.8px; /* Reduced by 20% */
+    height: 40.5px; /* Reduced by 20% */
+    top: 703.6px; /* Reduced by 20% */
+    left: 7.2px; /* Reduced by 20% */
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
-    
+}
+
+/* Key Metrics CSS */
+
+
+
+.key-metrics .child1 {
+    font-family: Roboto, sans-serif;
+    font-size: 15.6px; /* Reduced by 20% */
+    font-weight: 450; /* Reduced by 20% */
+    line-height: 28.5px; /* Reduced by 20% */
+    color: rgba(255, 255, 255, 1);
+    padding-left: 2.9px; /* Reduced by 20% */
+    margin: 3.6px; /* Reduced by 20% */
+    width: 310.5px; /* Reduced by 20% */
+    height: 35px; /* Reduced by 20% */
+    border-radius: 5.8px; /* Reduced by 20% */
+    background: linear-gradient(100.36deg, rgba(255, 162, 162, 0.5) 1.92%, rgba(255, 184, 223, 0.5) 100.29%);
+    border: 1px solid black;
+}
+
+.child2{
+width: 310.5px; /* Reduced by 20% */
+height: 35px;
+
+margin-top: 5px;
+border-radius: 5.8px;
+border:1px;
+padding-left: 2.9px;
+background: rgba(204, 204, 220, 0.35);
+border: 0.2px solid rgba(1, 2, 78, 1)
+}
+.child2 .sub-child1{
+
+height: 14px;
+font-family: Roboto;
+font-size: 8px;
+font-weight: 400;
+line-height: 14.06px;
+color: rgba(119, 119, 119, 1);
+
+}
+.reg{
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 13.13px;
+text-align: center;
+
+}
+.time{
+height: 35px;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 13.16px;
+color: rgba(255, 100, 100, 1);
 
 }
 
+.child2 .sub-child2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
 
-/* Key Metrics CSS*/
+
+.visits{
+width: 308.5px;
+height: 100px;
+display: flex;
+justify-content: space-around;
+margin-left: 5px;
+top: 776.01px;
+left: 110px;
+gap: 0px;
+border-radius: 15px;
+border: 0.5px 0px 0px 0px;
+opacity: 0px;
+background: rgba(103, 103, 149, 1);
+border: 0.5px solid rgba(221, 221, 221, 1);
+box-shadow: 2px 2px 4px 0px rgba(204, 204, 204, 0.25);
+box-shadow: -2px -2px 4px 0px rgba(204, 204, 204, 0.25);
+}
+
+.visits-child{
+width: 81px;
+height: 15px;
+top: 786.01px;
+left: 183.88px;
+gap: 0px;
+opacity: 0px;
+font-family: Roboto;
+font-size: 10px;
+font-weight: 500;
+line-height: 18.75px;
+text-align: left;
+color: rgba(255, 255, 255, 1);
+
+}
+/* .visits .visit-sub-child2{
+width: 169px;
+height: 71px;
+top: 819.34px;
+left: 410.02px;
+gap: 0px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+background: rgba(255, 249, 249, 1);
+font-family: Roboto;
+font-size: 30px;
+font-weight: 700;
+line-height: 48.59px;
+text-align: left;
+color: rgba(255, 100, 100, 1);
+} */
+
+.visits-child2,.visit-sub-child2{
+ width: 90px;
+height: 52px;
+border-radius: 4px;
+background: rgba(255, 255, 255, 0.3);
+}
+.visits-child2 span,.visit-sub-child2 span{ 
+width: 77px;
+height: 49px;
+opacity: 0px;
+font-family: Roboto;
+font-size: 30px;
+font-weight: 700;
+color: rgba(255, 255, 255, 1);
+}
+.visits-child2{
+    margin-top: 18px;
+}
+.main-container{
+    display: flex;
+}
+.child-container{
+width: 165px;
+height: 75px;
+gap: 0px;
+border-radius: 4px;
+opacity: 0px;
+background: rgba(232, 217, 225, 0.3);
+
+}
+.insurance{
+width: 79px;
+height: 16px;
+top: 916.01px;
+left: 121px;
+gap: 0px;
+opacity: 0px;
+}
+.insurance p{
+width: 62px;
+height: 16px;
+top: 916.01px;
+left: 138px;
+gap: 0px;
+opacity: 0px;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.41px;
+text-align: left;
+color: rgba(139, 67, 103, 1);
+
+
+}
+.child-container .sub-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Zone Statistics CSS */
+#container {
+    display: flex;
+    flex-direction: column;
+   
+}
+.first-row, .second-row {
+    display: flex;
+    gap: 5px; /* Adjust the gap between columns as needed */
+}
+.zone-statistics {
+    flex: 1; /* Takes available space */
+}
+
+
+
+.zone-statistics {
+    display: flex;
+    padding: 5px;
+    width: 515.1px; /* Reduced by 20% */
+    height: 240.8px; /* Reduced by 20% */
+    border-radius: 2.9px; /* Reduced by 20% */
+    border: 1px solid;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+.zone-main{
+    
+}
+
+.zone-head {
+    height: 26.7px;
+    margin-bottom: 5px; /* Space between zone-head and zone-statistics-data */
+    border-radius: 5.6px; /* Reduced by 20% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.9px; /* Reduced by 20% */
+    background: rgba(103, 103, 149, 1);
+    border-left: 2.9px solid rgba(1, 2, 78, 1); /* Reduced by 20% */
+    width: 100%; /* Ensures the head spans the full width */
+    box-sizing: border-box; /* Ensures border is included in width */
+}
+
+.zone-head p {
+    width: auto; /* Adjust to fit content */
+    height: auto; /* Adjust to fit content */
+    margin: 0;
+    font-family: Roboto;
+    font-size: 13.8px; /* Reduced by 20% */
+    font-weight: 630; /* Reduced by 20% */
+    line-height: 20.9px; /* Reduced by 20% */
+    color: rgba(255, 255, 255, 1);
+    text-align: center; /* Center text inside the header */
+}
+
+.zone-statistics-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    height: 26.1px;
+    margin-top: 5px; /* Reduced by 20% */
+    padding-left: 10px; /* Adjusted for internal spacing */
+
+    box-sizing: border-box; /* Ensures padding is included in width */
+    background: rgba(235, 235, 255, 1);
+}
+
+.zone-statistics-data img {
+    width: 16.4px; /* Reduced by 20% */
+    height: 14.7px; /* Reduced by 20% */
+    opacity: 0.8px;
+}
+
+.zone-statistics-data p {
+    font-family: Roboto;
+    font-size: 11.4px; /* Reduced by 20% */
+    font-weight: 630; /* Reduced by 20% */
+    line-height: 18.08px; /* Reduced by 20% */
+    color: rgba(119, 119, 119, 1);
+    margin-right: 8px;
+}
+
+/* Specific class adjustments if needed */
+.green-head, .red-head, .yellow-head {
+    width: 110.3px; /* Reduced by 20% */
+    height: 26.7px; /* Reduced by 20% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-left: 3.6px; /* Reduced by 20% */
+    padding: 4.9px 21.2px 4.9px 21.2px; /* Reduced by 20% */
+    gap: 8.1px; /* Reduced by 20% */
+    border-radius: 8.1px; /* Reduced by 20% */
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 11.6px; /* Reduced by 20% */
+    font-weight: 630; /* Reduced by 20% */
+    line-height: 17.1px; /* Reduced by 20% */
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.green-head {
+    background: rgba(114, 192, 144, 1);
+}
+
+.yellow-head {
+    background: rgba(242, 157, 65, 1);
+}
+
+.red-head {
+    background: rgba(255, 100, 100, 1);
+}
+
+.green-zone p, .yellow-zone p, .red-zone p {
+    width: 110.5px; /* Reduced by 20% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26.1px; 
+    margin-top: 5.4px;
+    margin-left: 3.6px; 
+    border-radius: 8.1px; 
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 10.2px; 
+    font-weight: 600;
+    line-height: 16.98px; 
+    text-align: center;
+    color: rgba(119, 119, 119, 1);
+}
+
+.green-zone p {
+    background: rgba(198, 240, 194, 0.5);
+    
+}
+
+.yellow-zone p {
+    background: rgba(245, 190, 103, 0.5);
+}
+
+.red-zone p {
+    background: rgba(255, 224, 224, 0.6);
+}
+
+/* Triage Chart CSS */
+
+.chart-traige-interval,
+.chart-traige-zone,
+.chart-patient-interval,
+.chart-patient-doctor {
+    flex: 1; /* Each chart will have equal width */
+    margin-left: 5px;
+}
+
+
+
+/* last Container */
+
+.last-container{
+    display: flex;
+    justify-content: space-between; /* Ensure space between child divs */
+    padding: 20px; /* Add padding inside the container */
+   
+}
+.last-container .child-1{
+width: 197px;
+height: 280px;
+border-radius: 4px 0px 0px 0px;
+border: 0.5px 0px 0px 0px;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+border: 0.5px solid rgba(221, 221, 221, 1);
+background: rgba(255, 249, 249, 1);
+
+}
+
+.child-2 .sub-child1,.child-2 .sub-child2{
+width: 300px;
+height: 140px;
+top: 643.8px;
+left: 846.17px;
+gap: 0px;
+border-radius: 4px 0px 0px 0px;
+border: 0.5px 0px 0px 0px;
+opacity: 0px;
+
+}
+.last-container .child-3{
+width: 330px;
+height: 240px;;
+top: 644.01px;
+left: 1224.75px;
+gap: 0px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+
+
+}
+.child1 .waiting{
+width: 100.5px;
+height: 100.5px;
+
+}
+.last-container .child-1 .sub-child-1{
+width: 60px;
+height: 23px;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 600;
+line-height: 23.44px;
+text-align: center;
+color: rgba(204, 204, 204, 1);
+padding-left: 5px;
+
+}
+.last-container .child-1 .sub-child-2{
+width: 157px;
+height: 28px;
+font-family: Roboto;
+font-size: 20px;
+font-weight: 600;
+line-height: 28.13px;
+text-align: center;
+
+    color: rgba(255, 100, 100, 1)
+}
+.child-1 .waiting img{
+width: 139.06px;
+height: 172.5px;
+margin-top: 40px;
+}
+.child-2  .time{
+    display: flex;
+    justify-content: space-between;
+}
+.child-2 .sub-child1 .triage{
+background: linear-gradient(180deg, rgba(84, 56, 100, 0.9) 0%, rgba(118, 96, 131, 0.9) 100%);
+width: 280px;
+height: 60px;
+top: 645.01px;
+left: 845.75px;
+gap: 0px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 18.75px;
+
+color: rgba(255, 255, 255, 1);
+
+}
+.child-2 .sub-child2 .consultation{
+width: 280px;
+height: 60px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 18.75px;
+background: linear-gradient(180deg, rgba(139, 67, 103, 0.8) 0%, rgba(139, 67, 103, 0.8) 100%);
+color: rgba(255, 255, 255, 1);
+
+
+}
+.time .sub-time1{
+    width: 67px;
+height: 68px;
+top: 743.64px;
+left: 915.47px;
+gap: 0px;
+opacity: 0px;
+font-family: Roboto;
+font-size: 38px;
+font-weight: 700;
+line-height: 67.97px;
+text-align: center;
+color: rgba(153, 153, 153, 1);
+
+}
+.time .sub-time2{
+width: 117px;
+height: 53px;
+top: 751.14px;
+left: 1089.17px;
+gap: 0px;
+opacity: 0px;
+font-family: Roboto;
+font-size: 25px;
+font-weight: 700;
+line-height: 52.73px;
+text-align: left;
+color: rgba(255, 100, 100, 0.7);
+
+}
+.child-3 .sub-child-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(100.36deg, rgba(103, 103, 149, 0.56) 1.92%, rgba(103, 103, 149, 0.56) 1.93%, rgba(235, 235, 255, 0.7) 100.29%);
+    padding:5px;
+    height: 60px;
+
+}
+
+.custom-row-style {
+    width: 665.57px;
+    height: 41.35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-top: 1px solid black; /* Adding a 1px solid black top border */
+    border-right: 0px;           /* No right border */
+    border-bottom: 0px;          /* No bottom border */
+    border-left: 0px;    
+}
+
 
 
