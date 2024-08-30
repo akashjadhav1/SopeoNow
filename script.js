@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         ],
         chart: {
-            type: 'line',
+            type: 'bar',
             height: 250
         },
         xaxis: {
@@ -225,23 +225,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById("search");
     const rowsPerPage = 4;
     let currentPage = 1;
-
-    const data = [
-        {
-            docstats: [
-                { doc_name: "Nazima Chaudhary", count: 10, avg_visit_tm: 1248 },
-                { doc_name: "Ameen Uddin Mohammed", count: 6, avg_visit_tm: 2330 },
-                { doc_name: "Waleed Hussain", count: 4, avg_visit_tm: 2145 },
-                { doc_name: "Naglaa Mahmoud", count: 4, avg_visit_tm: 720 },
-                { doc_name: "Saeed Choudhry", count: 4, avg_visit_tm: 615 },
-                { doc_name: "Madiha Samil", count: 2, avg_visit_tm: 1110 },
-                { doc_name: "Swapna Bade", count: 1, avg_visit_tm: 1140 },
-                { doc_name: "Mohammed Chaudhary", count: 1, avg_visit_tm: 1560 },
-                { doc_name: "Mariam Seleman", count: 1, avg_visit_tm: 720 },
-                { doc_name: "Huma Khan", count: 1, avg_visit_tm: 180 }
-            ]
-        }
-    ];
 
     let filteredData = data[0].docstats;
     const totalPages = Math.ceil(filteredData.length / rowsPerPage);
