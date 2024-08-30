@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       ],
         chart: {
-        height: 240,
+        height: 200,
         type: 'line',
         stacked: false
       },
@@ -215,31 +215,127 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+//pagination and stats data 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const tableBody = document.querySelector("#docStatsTable tbody");
+    const prevButton = document.getElementById("prevPage");
+    const nextButton = document.getElementById("nextPage");
+    const pageNumbers = document.getElementById("pageNumbers");
+    const searchInput = document.getElementById("search");
+    const rowsPerPage = 4;
+    let currentPage = 1;
 
-const tableBody = document.querySelector("#docStatsTable tbody");
-const docstats = data[0].docstats
+    const data = [
+        {
+            docstats: [
+                { doc_name: "Nazima Chaudhary", count: 10, avg_visit_tm: 1248 },
+                { doc_name: "Ameen Uddin Mohammed", count: 6, avg_visit_tm: 2330 },
+                { doc_name: "Waleed Hussain", count: 4, avg_visit_tm: 2145 },
+                { doc_name: "Naglaa Mahmoud", count: 4, avg_visit_tm: 720 },
+                { doc_name: "Saeed Choudhry", count: 4, avg_visit_tm: 615 },
+                { doc_name: "Madiha Samil", count: 2, avg_visit_tm: 1110 },
+                { doc_name: "Swapna Bade", count: 1, avg_visit_tm: 1140 },
+                { doc_name: "Mohammed Chaudhary", count: 1, avg_visit_tm: 1560 },
+                { doc_name: "Mariam Seleman", count: 1, avg_visit_tm: 720 },
+                { doc_name: "Huma Khan", count: 1, avg_visit_tm: 180 }
+            ]
+        }
+    ];
 
-docstats.forEach(stat => {
-    // Create a new row
-    const row = document.createElement("tr");
-    row.classList.add("custom-row-style");
+    let filteredData = data[0].docstats;
+    const totalPages = Math.ceil(filteredData.length / rowsPerPage);
 
-    // Create cells for doctor name, patient count, and average visit time
-    const nameCell = document.createElement("td");
-    nameCell.textContent = stat.doc_name;
-    
-    const countCell = document.createElement("td");
-    countCell.textContent = stat.count;
-    
-    const timeCell = document.createElement("td");
-    timeCell.textContent = Math.round(stat.avg_visit_tm / 60); // Convert time to minutes
-    
-    // Append cells to the row
-    row.appendChild(nameCell);
-    row.appendChild(countCell);
-    row.appendChild(timeCell);
-    
-    // Append row to the table body
-    tableBody.appendChild(row);
+    // Function to display rows for the current page
+    function displayRows() {
+        // Clear the existing rows
+        tableBody.innerHTML = '';
+
+        // Calculate start and end indices for the current page
+        const startIndex = (currentPage - 1) * rowsPerPage;
+        const endIndex = Math.min(startIndex + rowsPerPage, filteredData.length);
+
+        // Add rows for the current page
+        for (let i = startIndex; i < endIndex; i++) {
+            const stat = filteredData[i];
+            
+            // Create a new row element
+            const row = document.createElement("tr");
+            row.classList.add("custom-row-style");
+
+            const nameCell = document.createElement("td");
+            nameCell.textContent = stat.doc_name;
+
+            const countCell = document.createElement("td");
+            countCell.textContent = stat.count;
+
+            const timeCell = document.createElement("td");
+            timeCell.textContent = Math.round(stat.avg_visit_tm / 60); // Convert time to minutes
+
+            row.appendChild(nameCell);
+            row.appendChild(countCell);
+            row.appendChild(timeCell);
+
+            tableBody.appendChild(row);
+        }
+
+        // Update pagination controls
+        updatePaginationControls();
+    }
+
+    // Function to update pagination controls
+    function updatePaginationControls() {
+        pageNumbers.innerHTML = '';
+
+        for (let i = 1; i <= totalPages; i++) {
+            const pageNumber = document.createElement("span");
+            pageNumber.textContent = i;
+            pageNumber.classList.add("page-number");
+
+            if (i === currentPage) {
+                pageNumber.classList.add("active");
+            }
+
+            pageNumber.addEventListener("click", function() {
+                currentPage = i;
+                displayRows();
+            });
+
+            pageNumbers.appendChild(pageNumber);
+        }
+
+        prevButton.disabled = currentPage === 1;
+        nextButton.disabled = currentPage === totalPages;
+    }
+
+    // Event listeners for pagination buttons
+    prevButton.addEventListener("click", function() {
+        if (currentPage > 1) {
+            currentPage--;
+            displayRows();
+        }
+    });
+
+    nextButton.addEventListener("click", function() {
+        if (currentPage < totalPages) {
+            currentPage++;
+            displayRows();
+        }
+    });
+
+    // Function to filter data based on search input
+    function filterData() {
+        const query = searchInput.value.toLowerCase();
+        filteredData = data[0].docstats.filter(stat =>
+            stat.doc_name.toLowerCase().includes(query)
+        );
+        currentPage = 1; // Reset to first page after filtering
+        displayRows();
+    }
+
+    // Event listener for search input
+    searchInput.addEventListener("input", filterData);
+
+    // Initial display
+    displayRows();
 });

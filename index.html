@@ -126,7 +126,7 @@
 
         <div id="container">
             <div class="first-row">
-                <div class="zone-statistics">
+                <div class="">
                     <div class="zone-statistics">
                         <div class="zone-main">
                             <div class="zone-head">
@@ -250,26 +250,29 @@
                 <div class="child-3">
 
                     <div class="sub-child-1">
-                        <div> <p>Doctor Statistics</p></div>
-                       <div>
-                        <input type="search" name="search" id="search" placeholder="Search here..." >
-                       </div>
-                        
+                        <div><p>Doctor Statistics</p></div>
+                        <div>
+                            <input type="search" name="search" id="search" placeholder="Search here..." >
+                        </div>
                     </div>
-
                     <div>
                         <table id="docStatsTable">
                             <thead>
-                                <tr>
-                                    <th>Doctor</th>
-                                    <th>Patients</th>
-                                    <th>Time (mins)</th>
-                                </tr>
+                                    <tr>
+                                        <th>Doctor</th>
+                                        <th>Patients</th>
+                                        <th>Time</th>
+                                    </tr>
                             </thead>
-                            <tbody>
-                               
+                            <tbody >
+                                <tr></tr>
                             </tbody>
                         </table>
+                        <div id="paginationControls">
+                            <button type="button" id="prevPage">&lt;</button>
+                            <span id="pageNumbers"></span>
+                            <button type="button" id="nextPage">&gt;</button>
+                        </div>
                     </div>
                 </div>
             </div>

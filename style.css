@@ -333,12 +333,15 @@ color: rgba(139, 67, 103, 1);
 
 .zone-statistics {
     display: flex;
-    padding: 5px;
+    padding: 10px;
     width: 515.1px; /* Reduced by 20% */
     height: 240.8px; /* Reduced by 20% */
     border-radius: 2.9px; /* Reduced by 20% */
     border: 1px solid;
     box-sizing: border-box; /* Ensures padding is included in width/height */
+    box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.1);
+box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
 }
 .zone-main{
     
@@ -470,6 +473,9 @@ color: rgba(139, 67, 103, 1);
 .chart-patient-doctor {
     flex: 1; /* Each chart will have equal width */
     margin-left: 5px;
+    border: 0.5px solid rgba(221, 221, 221, 1);
+   margin-top: 3px;
+   border-radius: 8px;
 }
 
 
@@ -609,6 +615,12 @@ text-align: left;
 color: rgba(255, 100, 100, 0.7);
 
 }
+.child-3{
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
 .child-3 .sub-child-1{
     display: flex;
     justify-content: space-between;
@@ -619,16 +631,83 @@ color: rgba(255, 100, 100, 0.7);
 
 }
 
-.custom-row-style {
-    width: 665.57px;
-    height: 41.35px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 1);
-    border-top: 1px solid black; /* Adding a 1px solid black top border */
-    border-right: 0px;           /* No right border */
-    border-bottom: 0px;          /* No bottom border */
-    border-left: 0px;    
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
+
+thead {
+    background: rgba(248, 248, 255, 1);
+
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-family: Roboto;
+font-size: 15px;
+font-weight: 400;
+line-height: 21.09px;
+
+
+    
+}
+
+th {
+    background: rgba(248, 248, 255, 1);
+
+    font-weight: bold;
+    
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-row-style {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(248, 248, 255, 1);
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+#search {
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#paginationControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 10px;
+}
+
+.page-number {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.page-number.active {
+    background: rgba(103, 103, 149, 1);
+    color: white;
+    border: 1px rgba(103, 103, 149, 1);
+
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 
 
 
