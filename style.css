@@ -236,28 +236,19 @@ text-align: left;
 color: rgba(255, 255, 255, 1);
 
 }
-/* .visits .visit-sub-child2{
-width: 169px;
-height: 71px;
-top: 819.34px;
-left: 410.02px;
-gap: 0px;
-border-radius: 4px 0px 0px 0px;
-opacity: 0px;
-background: rgba(255, 249, 249, 1);
-font-family: Roboto;
-font-size: 30px;
-font-weight: 700;
-line-height: 48.59px;
-text-align: left;
-color: rgba(255, 100, 100, 1);
-} */
+
 
 .visits-child2,.visit-sub-child2{
  width: 90px;
 height: 52px;
 border-radius: 4px;
 background: rgba(255, 255, 255, 0.3);
+}
+.visit-sub-child2{
+    background: rgba(255, 249, 249, 1);
+   
+
+
 }
 .visits-child2 span,.visit-sub-child2 span{ 
 width: 77px;
@@ -266,21 +257,32 @@ opacity: 0px;
 font-family: Roboto;
 font-size: 30px;
 font-weight: 700;
-color: rgba(255, 255, 255, 1);
+color: rgba(255, 249, 249, 1);
+}
+.visit-sub-child2 span{
+    color: rgba(255, 100, 100, 1);
 }
 .visits-child2{
     margin-top: 18px;
 }
 .main-container{
     display: flex;
+    margin: 5px;
 }
 .child-container{
-width: 165px;
+width: 150px;
 height: 75px;
-gap: 0px;
+margin-left: 5px;
 border-radius: 4px;
-opacity: 0px;
 background: rgba(232, 217, 225, 0.3);
+
+}
+.child-container .sub-child p{
+font-family: Roboto;
+font-size: 20px;
+font-weight: 700;
+line-height: 32.81px;
+text-align: left;
 
 }
 .insurance{
@@ -290,6 +292,7 @@ top: 916.01px;
 left: 121px;
 gap: 0px;
 opacity: 0px;
+color: rgba(139, 67, 103, 1);
 }
 .insurance p{
 width: 62px;
@@ -311,6 +314,9 @@ color: rgba(139, 67, 103, 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.child-container .sub-child .num1{
+    color: rgba(139, 67, 103, 1);
 }
 
 
@@ -485,12 +491,12 @@ box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
 .last-container{
     display: flex;
     justify-content: space-between; /* Ensure space between child divs */
-    padding: 20px; /* Add padding inside the container */
+    padding: 5px; /* Add padding inside the container */
    
 }
 .last-container .child-1{
-width: 197px;
-height: 280px;
+width: 177px;
+height: 240px;
 border-radius: 4px 0px 0px 0px;
 border: 0.5px 0px 0px 0px;
 box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
@@ -501,13 +507,12 @@ background: rgba(255, 249, 249, 1);
 
 .child-2 .sub-child1,.child-2 .sub-child2{
 width: 300px;
-height: 140px;
-top: 643.8px;
-left: 846.17px;
-gap: 0px;
+height: 116px;
+margin-top: 4px;
 border-radius: 4px 0px 0px 0px;
 border: 0.5px 0px 0px 0px;
-opacity: 0px;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
 
 }
 .last-container .child-3{
@@ -521,14 +526,33 @@ opacity: 0px;
 
 
 }
+.clock{
+width: 8px;
+height: 8px;
+color: rgba(170, 170, 170, 1);
+
+}
+.clock2{
+    width: 15px;
+    height: 15px;
+    color: rgba(170, 170, 170, 1);
+}
 .child1 .waiting{
-width: 100.5px;
-height: 100.5px;
+width: 90px;
+height: 90px;
+}
+.zone-clock-p{
+width: Hug (78px)px;
+height: Hug (21px)px;
+padding: 1px 10px 1px 10px;
+gap: 10px;
+border-radius: 24px 0px 0px 0px;
+background-color: rgba(255, 255, 255, 1);
 
 }
 .last-container .child-1 .sub-child-1{
-width: 60px;
-height: 23px;
+width: 50px;
+height: 20px;
 font-family: Roboto;
 font-size: 12px;
 font-weight: 600;
@@ -551,17 +575,19 @@ text-align: center;
 }
 .child-1 .waiting img{
 width: 139.06px;
-height: 172.5px;
-margin-top: 40px;
+height: 122.5px;
+margin-top: 30px;
 }
 .child-2  .time{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 15%;
 }
 .child-2 .sub-child1 .triage{
 background: linear-gradient(180deg, rgba(84, 56, 100, 0.9) 0%, rgba(118, 96, 131, 0.9) 100%);
-width: 280px;
-height: 60px;
+width:auto;
+height: 50px;
 top: 645.01px;
 left: 845.75px;
 gap: 0px;
@@ -574,8 +600,8 @@ color: rgba(255, 255, 255, 1);
 
 }
 .child-2 .sub-child2 .consultation{
-width: 280px;
-height: 60px;
+width: auto;
+height: 50px;
 font-family: Roboto;
 font-size: 16px;
 font-weight: 700;
@@ -630,6 +656,13 @@ box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.25);
     height: 60px;
 
 }
+.doctorTitle{
+font-family: Roboto;
+font-size: 19px;
+font-weight: 700;
+line-height: 20.5px;
+
+}
 
 table {
     width: 100%;
@@ -642,13 +675,14 @@ thead {
 }
 
 th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 5px;
+    border: 1px 0px 1px 0px solid #ddd;
     text-align: left;
     font-family: Roboto;
-font-size: 15px;
-font-weight: 400;
-line-height: 21.09px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.09px;
+    
 
 
     
@@ -676,7 +710,7 @@ tr {
 #search {
     padding: 5px;
     margin: 10px 0;
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
 }
 
@@ -684,8 +718,8 @@ tr {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding-top: 10px;
+    gap: 30px;
+    padding-top: 8px;
 }
 
 .page-number {
